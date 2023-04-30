@@ -1,0 +1,288 @@
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+.main-container{
+    border: 1px solid rgb(238, 233, 233);
+    box-shadow: 0 0 8px rgb(209, 209, 209);
+    border-radius: 8px;
+    margin: 40px auto 100px auto;
+}
+
+header {
+     display: flex;
+     align-items: center;
+     padding: 18px 18px 6px 18px;
+}
+
+.notification-title {
+    margin-right: 10px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.notification-number {
+     background-color: hsl(219, 85%, 26%);
+     color: white;
+     border-radius: 6px;
+     margin: 0 12px 2px 0;
+     padding: 2px 10px;
+     font-weight: 800;
+}
+
+.mark-read {
+    display: flex;
+    flex: 1;
+    color: rgb(109, 110, 110);
+    font-size: 16px;
+    justify-content:end;
+}
+
+.mark-read:hover,
+.bold-font:hover,
+.user-name:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.user-notification {
+    display: flex;
+    align-items: center;
+    background-color: hsl(190, 60%, 98%); 
+    margin: 0 18px 10px 18px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.user-notification img {
+    width: 50px;
+    margin-right: 18px;
+    margin-left: 8px;
+}
+
+.user-name {
+    font-weight: 800;
+    color: black;
+    margin-right: 8px;
+}
+
+.user-notification p {
+    color: gray;
+    font-size: 16px;
+}
+
+.bold-font {
+    font-weight: 800;
+    color: gray;
+    margin-left: 4px;
+}
+
+.pink-point {
+    color:hsl(1, 90%, 64%);
+    margin: 0 4px;
+    font-size: 20px;
+}
+
+.time-ago {
+    display: block;
+}
+
+.message {
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+    margin-left: 6px;
+}
+
+.message:hover {
+    cursor: pointer;
+}
+
+.user-notification2 {
+    display: flex;
+    align-items: center; 
+    margin: 5px 18px 5px 18px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.user-notification3 {display: flex;
+    align-items: center; 
+    margin: 5px 18px 5px 18px;
+    padding: 0 10px;
+    border-radius: 10px;}
+
+.user-notification2 img {
+    width: 50px;
+    margin-right: 18px;
+    margin-left: 8px;
+}
+
+.user-notification3 img {
+    width: 50px;
+    margin-right: 18px;
+    margin-left: 8px;
+}
+
+.user-notification2 p {
+    color: gray;
+    font-size: 16px;
+}
+
+.user-notification3 p {
+    color: gray;
+    font-size: 16px;
+}
+
+.react-picture-container {
+    display: flex;
+    justify-content: end;
+    flex: 1;
+}
+
+.react-picture {
+    margin-left: 10px;
+}
+
+.react-picture:hover {
+    cursor: pointer;
+}
+
+.private-message {
+    border: 1px solid rgb(207, 205, 205);
+    color: gray;
+    display: block;
+    border-radius: 4px;
+    padding: 14px 16px;
+    margin: 0 50px 28px 100px;
+}
+
+.private-message:hover {
+    background-color: hsl(193, 73%, 93%); 
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+@media (max-width: 350px) {
+    header {
+        display: block !important;
+    }
+    .mark-read {
+        display: flex;
+        flex: 1;
+        color: rgb(109, 110, 110);
+        font-size: 16px;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    .notification-number {
+        background-color: hsl(219, 85%, 26%);
+        color: white;
+        border-radius: 6px;
+        margin: 0 12px 2px 0;
+        padding: 2px 10px;
+        font-weight: 800;
+        width: 12px;
+    }
+   .notification-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 800;
+    }
+   .user-notification {
+    display: flex;
+    align-items: center;
+    background-color: hsl(190, 60%, 98%); 
+    margin: 0 10px 10px 10px;
+    padding: 0 10px;
+    border-radius: 10px;
+    }
+    .user-notification2 {
+        display: flex;
+        align-items: center; 
+        margin: 5px 10px 5px 5px;
+        padding: 0 10px;
+        border-radius: 10px;
+    }
+    .private-message {
+        border: 1px solid rgb(207, 205, 205);
+        color: gray;
+        display: block;
+        border-radius: 4px;
+        padding: 14px 16px;
+        margin: 0 20px 20px 88px;
+    }
+    .user-name {
+        font-weight: 800;
+        color: black;
+        margin-right: 4px;
+    }
+    .user-picture {
+        margin-right: 16px !important;
+    }
+    .user-notification3 img {
+        margin: 0;
+    }
+    .react-picture-container {
+        display: block;
+    }
+    .react-picture {
+        display: block;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 450px) {
+    .main-container {
+     display: block;
+     padding: 18px 8px 6px 8px;
+     margin: 40px 10px !important;
+    }
+    
+}
+
+@media (min-width: 451px) and (max-width: 650px){
+    .main-container{
+        margin: 40px 40px !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 850px){
+    .main-container{
+        margin: 40px 100px !important;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1000px){
+    .main-container{
+        margin: 40px 150px !important;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .main-container{
+        margin: 40px 200px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .main-container{
+        margin: 40px 350px;
+    }
+}
+
+
+
+
+
